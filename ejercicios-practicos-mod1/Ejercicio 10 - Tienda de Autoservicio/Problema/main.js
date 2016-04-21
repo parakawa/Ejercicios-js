@@ -22,7 +22,14 @@ function recaudo(){
 	var c=parseInt(prompt("Ingresa el número de sucursales:"));
 	var t=parseInt(prompt("Ingresa el número de tiendas en cada sucursal:"));
 	var n=parseInt(prompt("Ingresa el número de empleados que trabajan en cada tienda:"));
+	var vTienda=0;
+	var vSucursal=0;
 	for(i=1;i<=c;i++)
 	for(j=1;j<=t;j++)
-	for(k=1;k<=n;k++)
+	for(k=1;k<=n;k++){
+		var vEmpleado=parseInt(prompt("Ingresa la venta del empleado "+k+" de la tienda "+j+" y sucursal "+i));
+		document.write("La venta del empleado "+k+" de la tienda "+j+" y sucursal "+i+" fue de s/."+vEmpleado+'<br>');
+	}
 }
+
+recaudo();
