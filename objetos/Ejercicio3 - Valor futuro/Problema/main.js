@@ -1,4 +1,4 @@
-function entrada(valor,tasa,periodo){
+function Entrada(valor,tasa,periodo){
 	this.valor=valor;
 	this.tasa=tasa;
 	this.periodo=periodo;
@@ -15,7 +15,7 @@ function llenado(){
 	var tasa=parseFloat(prompt("Tasa:"));
 	var periodo=parseInt(prompt("Periodo:"));
 
-	obj1=new entrada(valor,tasa,periodo);
+	obj1=new Entrada(valor,tasa,periodo);
 	obj1.calcular();
 }
 

@@ -1,4 +1,4 @@
-function circulo(radio){
+function Circulo(radio){
 	this.radio=radio;
 	this.area=area;
 	this.longitud=longitud;
@@ -18,7 +18,7 @@ function longitud(){
 
 function llenado(){
 	var radio=prompt("Ingresa un radio para calcular área y longitud:");
-	circulo1=new circulo(radio);
+	circulo1=new Circulo(radio);
 	circulo1.area();
 	circulo1.longitud();
 }
