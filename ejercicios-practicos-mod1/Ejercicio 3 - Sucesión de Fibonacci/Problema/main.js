@@ -1,4 +1,8 @@
 /*ejecutar en consola*/
+
+ var prompt = require("prompt");
+ prompt.start();
+
 function fibonacci(terminos){
 	i=1;
 	j=1;
@@ -14,4 +18,8 @@ function fibonacci(terminos){
 	}
 }
 
-fibonacci(13);
+
+prompt.get(['n'], function (err, result) {
+	var n=parseInt(result.n);
+    console.log( fibonacci(result.n));
+   }); 
